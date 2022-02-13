@@ -9,7 +9,7 @@ class Navigation extends React.Component {
                     <li onClick={() => this.props.history.push("/")}>Strona główna</li>
                     <li onClick={() => this.props.history.push("/sessions")}>Sesje</li>
                     <li onClick={() => this.props.history.push("/workshops")}>Warsztaty</li>
-                    <li>Cennik</li>
+                    <li onClick={() => this.props.history.push("/pricing")}>Cennik</li>
                     <li onClick={() => this.props.history.push("/contact")}>Kontakt</li>
                 </ul>
             </div>

@@ -5,6 +5,7 @@ import Navigation  from './components/Navigation';
 import Home from './components/Home/Home';
 import Sessions from './components/Sessions';
 import Workshops from './components/Workshops';
+import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 
 
@@ -18,6 +19,7 @@ class App extends React.Component {
               <Route path="/" exact component={Home} />
               <Route path="/sessions" component={Sessions} />
               <Route path="/workshops" component={Workshops} />
+              <Route path="/pricing" component={Pricing} />
               <Route path="/contact" component={Contact} />
             </Switch>
         </BrowserRouter>
