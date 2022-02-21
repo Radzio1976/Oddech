@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Slider from './Slider';
+
 class Home extends React.Component {
     render() {
         return(
-            <h1>Strona główna</h1>
+            <div id="Home">
+                <Slider />
+            </div>
         )
     }
 }

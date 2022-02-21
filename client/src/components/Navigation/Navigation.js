@@ -1,17 +1,24 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
+import './navigation.css';
+
 class Navigation extends React.Component {
     render() {
         return(
             <div id="Navigation">
-                <ul>
-                    <li onClick={() => this.props.history.push("/")}>Strona główna</li>
-                    <li onClick={() => this.props.history.push("/sessions")}>Sesje</li>
-                    <li onClick={() => this.props.history.push("/workshops")}>Warsztaty</li>
-                    <li onClick={() => this.props.history.push("/pricing")}>Cennik</li>
-                    <li onClick={() => this.props.history.push("/contact")}>Kontakt</li>
-                </ul>
+                <div id="Logo">
+                    <h1 onClick={() => this.props.history.push("/")}>Marzena Rosiak</h1>
+                </div>
+                <nav id="Nav">
+                    <ul>
+                        <li onClick={() => this.props.history.push("/")}>Strona główna</li>
+                        <li onClick={() => this.props.history.push("/sesje")}>Sesje</li>
+                        <li onClick={() => this.props.history.push("/warsztaty")}>Warsztaty</li>
+                        <li onClick={() => this.props.history.push("/cennik")}>Cennik</li>
+                        <li onClick={() => this.props.history.push("/kontakt")}>Kontakt</li>
+                    </ul>
+                </nav>
             </div>
         )
     }

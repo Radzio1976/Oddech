@@ -17,10 +17,10 @@ class App extends React.Component {
           <Navigation />
             <Switch>
               <Route path="/" exact component={Home} />
-              <Route path="/sessions" component={Sessions} />
-              <Route path="/workshops" component={Workshops} />
-              <Route path="/pricing" component={Pricing} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/sesje" component={Sessions} />
+              <Route path="/warsztaty" component={Workshops} />
+              <Route path="/cennik" component={Pricing} />
+              <Route path="/kontakt" component={Contact} />
             </Switch>
         </BrowserRouter>
       </div>
